@@ -1,0 +1,5 @@
+WELCOME TO JAMES KENNEDY'S REPOSITORY 
+FOR 
+CIT 360 - Object-Oriented Software Development
+FROM
+BYU-I
