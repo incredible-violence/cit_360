@@ -4,18 +4,14 @@
  * and open the template in the editor.
  */
 package view;
-import view.*;
 
 /**
  *
  * @author jamesK
  */
 public class Demo {
-    private String demotype;
-
+    
     public Demo(String demotype) {
-        this.demotype = demotype;
-        Welcome welcome = new Welcome(demotype);
-        
+        Banners welcome = new Banners(demotype);
     }
 }

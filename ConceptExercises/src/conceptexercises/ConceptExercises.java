@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 package conceptexercises;
-import java.util.Scanner;
-import Collections.*;
-import view.*;
+import control.*;
 
 /**
  *
@@ -18,7 +16,7 @@ public class ConceptExercises {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Switch s = new Switch();
+        MenuControl m = new MenuControl();
     }
     
 }
