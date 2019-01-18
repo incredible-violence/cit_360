@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
 package Collections;
-import view.Demo;
 import java.util.ArrayList;
+import view.Demo;
 import java.util.List;
 import java.util.Random;
 
@@ -18,20 +18,39 @@ public class ListDemo extends Demo {
     public ListDemo(String demotype) {
         super(demotype);
         
-        // demonstrate ArrayList
+        // create list (ArrayList)
+        System.out.println("Creating New List");
+        List<Integer> demoList = new ArrayList<>();
         
-        // create an ArrayList
-        List<Integer> list = new ArrayList<Integer> ();
-        
-        // populate list of numbers 1 through 10
+        // populate list
+        System.out.println("Populating List with integers 0 - 10");
+        // list has contents equivalent to its index for purposes of demonstration
         for (int i = 0; i < 10; i++) {
-            list.add(i, i + 1);
+            demoList.add(i);
         }
         
-        // access random index and print out
-        Random rand = new Random();
-        int n = rand.nextInt(10) + 1;
-        System.out.println("Index: " + n);
-        System.out.println("Content: " + list.indexOf(n));
+        // demonstrate List aspect 1
+        System.out.println("A Java List allows access to internal elements by "
+                + "referencing integer position, starting at 0.");
+        
+        // demonstrate List allows duplicate elements
+        System.out.println("Lists, unlike Sets, allow duplicate elements");
+        
+        // demonstrate List inheiritance of iterator, add, remove, equals, and 
+        // hashcode from Collections parent class
+        
+        // iterator
+        
+        // add
+        
+        // remove
+        
+        // equals
+        
+        // hashcode
+        
+        // demonstrate special iterator ListIterator
+        
+        // 
     }
 }
