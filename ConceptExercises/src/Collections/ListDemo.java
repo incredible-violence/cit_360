@@ -5,7 +5,7 @@
  */
 package Collections;
 import java.util.ArrayList;
-import view.Demo;
+import model.Demo;
 import java.util.List;
 import java.util.Random;
 

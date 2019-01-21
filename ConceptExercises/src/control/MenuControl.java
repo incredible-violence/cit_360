@@ -5,6 +5,7 @@
  */
 package control;
 
+import model.Banners;
 import Collections.*;
 import java.util.Scanner;
 import view.*;

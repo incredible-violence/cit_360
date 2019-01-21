@@ -5,7 +5,7 @@
  */
 package Collections;
 
-import view.Demo;
+import model.Demo;
 
 /**
  *
