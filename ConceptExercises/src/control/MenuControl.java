@@ -5,8 +5,8 @@
  */
 package control;
 
-import model.Banners;
-import Collections.*;
+import view.Banners;
+import model.*;
 import java.util.Scanner;
 import view.*;
 
@@ -119,19 +119,19 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "1":
-                    ListDemo listDemo = new ListDemo("List");
+                  //  ListDemo listDemo = new ListDemo("List");
                     break;
                 case "2":
-                    MapDemo mapDemo = new MapDemo("Map");
+                  //  MapDemo mapDemo = new MapDemo("Map");
                     break;
                 case "3":
-                    QueueDemo queDemo = new QueueDemo("Queue");
+                   // QueueDemo queDemo = new QueueDemo("Queue");
                     break;
                 case "4":
-                    SetDemo setDemo = new SetDemo("Set");
+                    //SetDemo setDemo = new SetDemo("Set");
                     break;
                 case "5":
-                    TreeDemo treeDemo = new TreeDemo("Tree");
+                    //TreeDemo treeDemo = new TreeDemo("Tree");
                     break;
                 case "B":
                     Banners.createBanner("Returning to Main Menu");

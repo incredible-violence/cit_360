@@ -5,6 +5,8 @@
  */
 package model;
 
+import view.Banners;
+
 /**
  *
  * @author jamesK
