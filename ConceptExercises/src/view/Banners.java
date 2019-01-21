@@ -20,14 +20,14 @@ public class Banners {
      * @param demotype
      ******************************************************************/
     public Banners(String demotype) {
-        createBanner_Big(demotype);
+        createBanner_Maj(demotype);
     }
     
     /*******************************************************************
-     * Create a Banner
+     * Create a Big Banner
      * @param title
      ******************************************************************/
-    public static void createBanner_Big(String title) {
+    public static void createBanner_Maj(String title) {
         String fullTitle = generateTitle(title);
         int stars = fullTitle.length();
         printStars(stars);
@@ -35,6 +35,14 @@ public class Banners {
         printStars(stars);
     }
     
+    /*******************************************************************
+     * Create a Medium Banner
+     * @param title
+     ******************************************************************/
+    public static void createBanner_Min(String title) {
+        String fullTitle = generateTitle(title);
+        System.out.println(fullTitle);
+    }
     /*******************************************************************
      * Print Appropriate Length of "*'s" on their own line
      * @param length
