@@ -20,14 +20,14 @@ public class Banners {
      * @param demotype
      ******************************************************************/
     public Banners(String demotype) {
-        createBanner(demotype);
+        createBanner_Big(demotype);
     }
     
     /*******************************************************************
      * Create a Banner
      * @param title
      ******************************************************************/
-    public static void createBanner(String title) {
+    public static void createBanner_Big(String title) {
         String fullTitle = generateTitle(title);
         int stars = fullTitle.length();
         printStars(stars);
