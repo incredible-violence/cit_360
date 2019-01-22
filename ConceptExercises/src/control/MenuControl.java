@@ -165,9 +165,13 @@ public class MenuControl {
             Menus.threadexecutorrunnableMenu();
             String input = userInput.next();
             menuOption = input;
+            ThreadExecutorRunnable ter = new ThreadExecutorRunnable();
 
             // switch statement
             switch (input) {
+                case "1":
+                    Banners.createBanner_Maj("Run Demonstration");
+                    ter.demo();
                 case "B":
                     Banners.createBanner_Maj("Returning to Main Menu");
                     mainMenu();

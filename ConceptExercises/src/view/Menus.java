@@ -45,7 +45,7 @@ public class Menus {
     }
     
     public static void threadexecutorrunnableMenu() {
-        System.out.println("Work In Progress, please either: ");
+        System.out.println(" 1: Run Demonstration");
         System.out.println(" B: Back to Previous Menu");
         System.out.println(" Q: Quit Program");
     }
