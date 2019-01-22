@@ -7,6 +7,7 @@ package model;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import view.Banners;
 
 /**
  * Threads,  Executors, and Runnable Example.
@@ -25,6 +26,7 @@ public class ThreadExecutorRunnable implements Runnable {
 
     // member variables
     private String command;
+    Banners banner = new Banners();
     
     /******************************************
      * Default Constructor
@@ -43,11 +45,12 @@ public class ThreadExecutorRunnable implements Runnable {
     // you must implement this method for Runnable to be properly integrated.
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName() + "Start Command = " + command);
+        banner.createBanner_Min(Thread.currentThread().getName() + "Start Command = " + command);
         processCommand();
-        System.out.println(Thread.currentThread().getName() + "End.");
+        banner.createBanner_Min(Thread.currentThread().getName() + "End.");
     }
     
+    // what we are having each of the threads do - basically sleep for 5 seconds.
     private void processCommand() {
         try {
             Thread.sleep(5000);
