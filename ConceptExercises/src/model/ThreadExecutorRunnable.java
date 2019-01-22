@@ -7,7 +7,7 @@ package model;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import view.Banners;
+import view.Banner;
 
 /**
  * Threads,  Executors, and Runnable Example.
@@ -26,7 +26,7 @@ public class ThreadExecutorRunnable implements Runnable {
 
     // member variables
     private String command;
-    Banners banner = new Banners();
+    Banner banner = new Banner();
     
     /******************************************
      * Default Constructor
@@ -45,9 +45,9 @@ public class ThreadExecutorRunnable implements Runnable {
     // you must implement this method for Runnable to be properly integrated.
     @Override
     public void run() {
-        banner.createBanner_Min(Thread.currentThread().getName() + "Start Command = " + command);
+        Banner.createBanner_Min(Thread.currentThread().getName() + " Start Command = " + command);
         processCommand();
-        banner.createBanner_Min(Thread.currentThread().getName() + "End.");
+        Banner.createBanner_Min(Thread.currentThread().getName() + " End.");
     }
     
     // what we are having each of the threads do - basically sleep for 5 seconds.
@@ -60,6 +60,15 @@ public class ThreadExecutorRunnable implements Runnable {
     }
     
     public void demo() {
+        
+        Banner.createBanner_Min("This demonstration creates a pool of 5 Threads,"
+                + "which then execute 10 'commands'. ");
+        Banner.createBanner_Min("Because there are 10 commands to be executed, "
+                + "and only 5 threads to execute them, they are completed in 2 "
+                + "rounds. ");
+        Banner.createBanner_Min("The command in question for this demonstration is "
+                + "for the thread to pause for 5 seconds, and then complete.");
+        
         ExecutorService executor = Executors.newFixedThreadPool(5);
         for (int i = 0; i < 10; i++) {
             Runnable worker = new ThreadExecutorRunnable("" + i);
@@ -69,7 +78,7 @@ public class ThreadExecutorRunnable implements Runnable {
         while (!executor.isTerminated()) {
             
         }
-        System.out.println("Demonstration Complete");
+        Banner.createBanner_Maj("Demonstration Complete");
     }
         
 }

@@ -9,22 +9,14 @@ package view;
  *
  * @author jamesK
  */
-public class Banners {
+public class Banner {
 
     // Default Constructor
-    public Banners() {
+    public Banner() {
     }
-    
+        
     /*******************************************************************
-     * Non-Default Constructor
-     * @param demotype
-     ******************************************************************/
-    public Banners(String demotype) {
-        createBanner_Maj(demotype);
-    }
-    
-    /*******************************************************************
-     * Create a Big Banner
+     * Create a Major Banner
      * @param title
      ******************************************************************/
     public static void createBanner_Maj(String title) {
@@ -36,11 +28,11 @@ public class Banners {
     }
     
     /*******************************************************************
-     * Create a Medium Banner
+     * Create a Minor Banner
      * @param title
      ******************************************************************/
     public static void createBanner_Min(String title) {
-        String fullTitle = generateTitle(title);
+        String fullTitle = generateContent(title);
         System.out.println(fullTitle);
     }
     /*******************************************************************
@@ -64,5 +56,13 @@ public class Banners {
         return fullTitle;
     }
     
+    /*******************************************************************
+     * Concatenate content Together
+     * @param title
+     ******************************************************************/
+    private static String generateContent(String content) {
+        String line = "*  " + content;
+        return line;
+    }
     
 }

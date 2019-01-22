@@ -5,7 +5,7 @@
  */
 package control;
 
-import view.Banners;
+import view.Banner;
 import model.*;
 import java.util.Scanner;
 import view.*;
@@ -45,67 +45,67 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "1":
-                    Banners.createBanner_Maj("Collections");
+                    // Collections
                     collectionsMenu();
                     break;
                 case "2":
-                    Banners.createBanner_Maj("Threads, Executors, Runnables");
+                    // Threads, Executors, Runnables
                     threadsMenu();
                     break;
                 case "3":
-                    Banners.createBanner_Maj("Application Controller Pattern");
+                    // Application Controller Pattern
                     applicationControllerPatternMenu();
                     break;
                 case "4":
-                    Banners.createBanner_Maj("MVC");
+                    // MVC
                     mvcMenu();
                     break;
                 case "5":
-                    Banners.createBanner_Maj("Hibernate");
+                    // Hibernate
                     hibernateMenu();
                     break;
                 case "6":
-                    Banners.createBanner_Maj("QCJSON & JSON");
+                    // QCJSON and JSON
                     sonMenu();
                     break;
                 case "7":
-                    Banners.createBanner_Maj("Android HttpURLConnection");
+                    // AndroidHttpURL Connection
                     androidMenu();
                     break;
                 case "8":
-                    Banners.createBanner_Maj("Servlets");
+                    // Servlets
                     servletsMenu();
                     break;
                 case "9":
-                    Banners.createBanner_Maj("JUnit Tests");
+                    // JUnit Tests
                     junitTestsMenu();
                     break;
                 case "10":
-                    Banners.createBanner_Maj("System Level Tests");
+                    // System Level Tests
                     systemLevelTestsMenu();
                     break;
                 case "11":
-                    Banners.createBanner_Maj("Use Case Diagrams");
+                    // Use Case Diagrams
                     useCaseDiagramsMenu();
                     break;
                 case "12":
-                    Banners.createBanner_Maj("Use Case Documents");
+                    // Use Case Documents
                     useCaseDocumentsMenu();
                     break;
                 case "13":
-                    Banners.createBanner_Maj("State Diagrams");
+                    // State Diagrams
                     stateDiagramsMenu();
                     break;
                 case "14":
-                    Banners.createBanner_Maj("Sequence Diagrams");
+                    // Sequence Diagrams
                     sequenceDiagramsMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
                     break;
                 default:
-                    Banners.createBanner_Maj("Invalid Input");
+                    Banner.createBanner_Maj("Invalid Input");
                     break;
             }
         } while (!"Q".equals(menuOption));
@@ -118,8 +118,9 @@ public class MenuControl {
      */
     public void collectionsMenu() {
         do {
-            Collections collect = new Collections("Collections");
             Menus.collectionsMenu();
+            Collections collect = new Collections();
+            
             String input = userInput.next();
             menuOption = input;
 
@@ -141,14 +142,14 @@ public class MenuControl {
                     collect.treeDemo();
                     break;
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
                 default:
-                    Banners.createBanner_Maj("Invalid Input");
+                    Banner.createBanner_Maj("Invalid Input");
                     break;
             }
         } while (!"B".equals(menuOption));
@@ -170,14 +171,14 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "1":
-                    Banners.createBanner_Maj("Run Demonstration");
+                    Banner.createBanner_Maj("Demonstration Starting");
                     ter.demo();
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -197,11 +198,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -221,11 +222,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -245,11 +246,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -269,11 +270,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -293,11 +294,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -317,11 +318,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -341,11 +342,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -365,11 +366,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -389,11 +390,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -413,11 +414,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -437,11 +438,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
@@ -461,11 +462,11 @@ public class MenuControl {
             // switch statement
             switch (input) {
                 case "B":
-                    Banners.createBanner_Maj("Returning to Main Menu");
+                    Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
                     break;
                 case "Q":
-                    Banners.createBanner_Maj("Quitting Program");
+                    Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
             }
         } while (!"B".equals(menuOption));
