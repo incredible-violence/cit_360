@@ -35,6 +35,7 @@ public class Banner {
         String fullTitle = generateContent(title);
         System.out.println(fullTitle);
     }
+    
     /*******************************************************************
      * Print Appropriate Length of "*'s" on their own line
      * @param length
