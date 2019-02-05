@@ -264,11 +264,16 @@ public class MenuControl {
     public void sonMenu() {
         do {
             Menus.qjsonjsonMenu();
+            SONDemo son = new SONDemo();
             String input = userInput.next();
             menuOption = input;
 
             // switch statement
             switch (input) {
+                case "1":
+                    Banner.createBanner_Maj("JSON Demonstration");
+                    son.jsonDemo();
+                    break;
                 case "B":
                     Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();
@@ -276,6 +281,7 @@ public class MenuControl {
                 case "Q":
                     Banner.createBanner_Maj("Quitting Program");
                     System.exit(0);
+                    break;
             }
         } while (!"B".equals(menuOption));
     }

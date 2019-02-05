@@ -15,7 +15,7 @@ public class Menus {
     }
 
     public static void mainMenu() {
-        Banner.createBanner_Maj("   Main Menu   ");
+        Banner.createBanner_Maj("            Main Menu            ");
         System.out.println("Choose an Option: ");
         System.out.println(" 1: Java Colletions");
         System.out.println(" 2: Threads, Executors, & Runnables");
@@ -35,7 +35,7 @@ public class Menus {
     }
 
     public static void collectionsMenu() {
-        Banner.createBanner_Maj("Collections");
+        Banner.createBanner_Maj("           Collections           ");
         System.out.println("Choose an Option: ");
         System.out.println(" 1: List Demonstration");
         System.out.println(" 2: Map Demonstration");
@@ -76,7 +76,7 @@ public class Menus {
     
     public static void qjsonjsonMenu() {
         Banner.createBanner_Maj("          QCJSON & JSON          ");
-        System.out.println("Work In Progress, please either: ");
+        System.out.println(" 1: Run Demonstration");
         System.out.println(" B: Back to Previous Menu");
         System.out.println(" Q: Quit Program");
     }
