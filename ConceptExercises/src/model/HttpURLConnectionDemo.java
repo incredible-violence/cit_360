@@ -32,7 +32,7 @@ public class HttpURLConnectionDemo {
     public void run_get() {
         try
         {
-            String myUrl = "https://www.google.com/search?q=kittens";
+            String myUrl = "https://www.google.com/";
             String results = doGet(myUrl);
             Banner.createBanner_Min(results);
         }
