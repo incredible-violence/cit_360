@@ -83,7 +83,8 @@ public class Menus {
     
     public static void androidhttpurlconnectionMenu() {
         Banner.createBanner_Maj("    AndroidHttpURL Connection    ");
-        System.out.println("Work In Progress, please either: ");
+        System.out.println(" 1: GET Demonstration");
+        System.out.println(" 2: POST Demonstration");
         System.out.println(" B: Back to Previous Menu");
         System.out.println(" Q: Quit Program");
     }

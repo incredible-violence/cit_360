@@ -294,11 +294,20 @@ public class MenuControl {
     public void androidMenu() {
         do {
             Menus.androidhttpurlconnectionMenu();
+            HttpURLConnectionDemo hucd = new HttpURLConnectionDemo();
             String input = userInput.next();
             menuOption = input;
 
             // switch statement
             switch (input) {
+                case "1":
+                    Banner.createBanner_Maj("GET Demonstation");
+                    hucd.run_get();
+                    break;
+                case "2": 
+                    Banner.createBanner_Maj("POST Demonstration");
+                    hucd.run_post();
+                    break;
                 case "B":
                     Banner.createBanner_Maj("Returning to Main Menu");
                     mainMenu();

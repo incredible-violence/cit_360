@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -59,7 +58,6 @@ public class SONDemo {
         entreeMap.put("Eggs", "1.99");
         entreeMap.put("Sirloin Steak", "11.99");
         entreeMap.put("Burger", "6.99");
-
         menuMap.put("Entrees", entreeMap);
 
         // beverages
@@ -100,16 +98,7 @@ public class SONDemo {
             
             // get menu
             Map mapMenu = ((Map)dinerObj.get("Menu"));
-            
-            // get appetizers
-            Map apps = ((Map)dinerObj.get("Appetizers"));
-            
-            // get entrees
-            Map ents = ((Map)dinerObj.get("Entrees"));
-            
-            // get beverages
-            Map bevs = ((Map)dinerObj.get("Beverages"));
-            
+                        
             // output diner name and date
             Banner.createBanner_Min("Restaurant: " + dinerName);
             Banner.createBanner_Min("Established: " + dinerEst);
@@ -122,7 +111,6 @@ public class SONDemo {
             Banner.createBanner_Min("Menu Map: ");
             outputMap(mapMenu);
             
-            
         } catch (FileNotFoundException e) {
             System.out.println("File Not Found");
             e.printStackTrace();
@@ -132,7 +120,6 @@ public class SONDemo {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        
     }
     
     private void outputMap(Map mapBoi) {
