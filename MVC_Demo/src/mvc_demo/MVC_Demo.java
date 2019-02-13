@@ -29,6 +29,7 @@ public class MVC_Demo {
         SwordControl control = new SwordControl(model,view);
         control.updateView();
         
+        System.out.println("Changing Name to Claymore, and Culture to be correct");
         // update
         control.setSwordName("Claymore");
         control.setCulture("Scottish");
